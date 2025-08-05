@@ -1,0 +1,54 @@
+{
+  "name": "odoo-printer-agent",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.example.odoo.printer",
+    "productName": "Odoo-Printer-Agent",
+    "files": [
+      "main.js",
+      "preload.js",
+      "view/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "server/ssl",
+        "to": "ssl"
+      },
+      {
+        "from": "server/dist/main",
+        "to": "main",
+        "filter": ["**/*"]
+      }
+    ],
+    "asarUnpack": [
+      "main/**"
+    ],
+    "directories": {
+      "buildResources": "build"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "devDependencies": {
+    "electron": "^37.2.5",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "auto-launch": "^5.0.6",
+    "tree-kill": "^1.2.2",
+    "usb": "^2.16.0"
+  }
+}

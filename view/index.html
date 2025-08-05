@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Odoo Printers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Odoo Printers</h1>
+    <p id="ip">IP: Loading...</p>
+
+    <div class="button-group">
+      <button id="connectBtn">Start Printer</button>
+      <button id="disconnectBtn" style="display: none;">Stop Printer</button>
+    </div>
+
+    <h2>Connected USB Printers</h2>
+    <div id="printerSection">
+      <p id="noPrinters">Loading printers...</p>
+      <div id="printerList" class="printer-list"></div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

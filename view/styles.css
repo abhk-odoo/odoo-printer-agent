@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #b993d6, #8ca6db);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #f8f4fb;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 450px;
+  max-height: 95vh;
+  overflow: auto;
+}
+
+.button-group {
+  margin-bottom: 1rem;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 1.1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: #7a3b69;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5a2b50;
+}
+
+.printer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.printer-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.printer-card h3 {
+  margin: 0;
+  color: #7a3b69;
+}
+
+.printer-card p {
+  margin: 4px 0;
+  color: #333;
+}

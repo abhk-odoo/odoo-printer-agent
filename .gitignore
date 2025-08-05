@@ -1,0 +1,59 @@
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Electron build outputs
+dist/
+build/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.log
+*.env
+*.sqlite3
+*.egg-info/
+*.bak
+*.swp
+*.tmp
+.cache/
+.Python
+.mypy_cache/
+.pytest_cache/
+env/
+venv/
+ENV/
+.venv/
+
+# PyInstaller
+*.spec
+*.so
+*.dll
+*.dylib
+*.exe
+*.app
+*.manifest
+
+# AppImage runtime folders
+*.AppImage
+*.AppImage.extract/
+*.mount_*/
+
+# macOS
+.DS_Store
+
+# Linux
+*.~ 
+*~
+
+# VSCode / JetBrains IDEs
+.vscode/
+.idea/
+
+# OS-level
+Thumbs.db
+ehthumbs.db
+Desktop.ini
